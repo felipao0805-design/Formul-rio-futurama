@@ -10,3 +10,21 @@ body {
   background-color: #ffff;
   line-height: 1.2;
 }
+.flex {
+  display: flex;
+
+  &.col {
+    flex-flow: column;
+  }
+}
+.grid {
+  display: grid;
+
+  &.col {
+    grid-auto-flow: column;
+  }
+}
+fieldset {
+  align-items: flex-start;
+  gap: 0.6rem;
+}

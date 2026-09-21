@@ -8,7 +8,53 @@
   </head>
   <body>
     <main>
-      <section></section>
+      <header>
+        <h1>Pesquisa online</h1>
+      </header>
+      <section>
+        <div class="contaier container-dados-pessoais">
+          <form action="" method="get">
+            <fieldset class="flex col">
+              <legend>Dados Pessoais</legend>
+              <!-- DADOS PESSOAIS -->
+
+              <label for="userName">Nome</label>
+              <input
+                type="text"
+                name="userName"
+                placeholder="Digite seu nome"
+                required
+              />
+
+              <label for="age">Idade</label>
+              <input name="age" type="number" min="12" max="100" required />
+
+              <label for="birtdate">Data de nascimento (opcional)</label>
+              <input type="date" name="birtdate" />
+
+              <label for="userEmail">E-mail</label>
+              <input
+                type="email"
+                name="userEmail"
+                placeholder="Digite seu email"
+                required
+              />
+              <label for="usePhoneNumber">Número do telefone</label>
+              <input
+                type="tel"
+                name="usePhoneNumber"
+                pattern="[o-9]{11}"
+                placeholder="DDD + números sem espaçoes ou hífens"
+              />
+
+              <label for="userName">Upload de fotos</label>
+              <input type="file" accept="image/n" name="userImage" />
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>

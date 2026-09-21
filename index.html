@@ -8,11 +8,11 @@
   </head>
   <body>
     <main>
-      <header>
+      <header class="flex">
         <h1>Pesquisa online</h1>
       </header>
       <section>
-        <div class="contaier container-dados-pessoais">
+        <div class="container container-dados-pessoais">
           <form action="" method="get">
             <fieldset class="flex col">
               <legend>Dados Pessoais</legend>
@@ -52,6 +52,30 @@
             </fieldset>
 
             <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+      <section>
+        <div class="container container-perfil">
+          <form action="" class="flex col" method="post">
+            <fieldset>
+              <legend>Perfil</legend>
+              <p>gênero</p>
+              <input type="radio" name="userGender" value="feminino" />
+              <label for="userGender">Feminino</label>
+              <input type="radio" name="userGender" value="masculino" />
+              <label for="userGender">Masculino</label>
+              <input type="radio" name="userGender" value="notInformed" />
+              <label for="userGender">Prefiro não informar</label>
+              <p>Estado civil</p>
+              <select name="maritalStatus">
+                <option value="notInformed">Selecione seu estado civil</option>
+                <option value="casado">Casado</option>
+                <option value="solteiro">Solteiro</option>
+                <option value="Divorciado">Divorciado</option>
+                <option value="casado">União estável</option>
+              </select>
+            </fieldset>
           </form>
         </div>
       </section>

@@ -24,6 +24,17 @@ body {
     grid-auto-flow: column;
   }
 }
+header {
+  padding: 1.6rem;
+  justify-content: center;
+}
+section {
+  padding: 1.6rem 2.2rem;
+}
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
 fieldset {
   align-items: flex-start;
   gap: 0.6rem;
